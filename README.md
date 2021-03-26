@@ -51,8 +51,6 @@ Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) 
 
 Table 1. Data for Visible Minorities Layer
 
-Table 1. Data for Visible Minorities Layer
-
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
 | % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
@@ -60,53 +58,26 @@ Table 1. Data for Visible Minorities Layer
 
 Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro.
 
-Unemployment
-(Number of unemployed persons age 15+)
-2011 National Household Survey
-Low Income
-(Percentage of persons living below the after-tax low income measure)
-Statistics Canada
-Social Assistance
-(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items)
-Toronto Employment & Social Services
-High School Graduation
-(Composite measure of four indicators predicting the rate of youth graduation from high school (2006-2011))
-2006 Census
-Marginalization Index 
-(A combined measure of 18 variables representing residential instability, ethnic concentration, dependency and material deprivation)
-Ontario Marginalization Index
-Post-Secondary Completion (Percentage of persons age 25-65 with post secondary certificate, diploma, or degree)
-2011 National Household
-Municipal Voting Rate
-(Percent of eligible voters who voted in the last municipal election)
-Toronto Election & Registry Services, Toronto Open Data
-Community Places for Meeting 
-(Average number of meeting places within a 10 minute walking distance measured from each residential block in the neighbourhoods [including libraries, recreation facilities, and places of worship]
-Toronto Open Data
-Walkability 
-(A walkability score between 0 (not very walkable) and 100 (very walkable)
-Walkscore.com
-Healthy Food Stores 
-(The average number of healthier food stores within a 10 minute walking distance from each residential block in a neighbourhood)
-Toronto Open Data, Toronto Dinesafe
-Green Space 
-(Average amount of green space (including parks and public areas) per km2 in a 1 km circular buffer from each residential block in the neighbourhood)
-DMTI (University of Toronto) 
-Premature Mortality
-(Age-adjusted number of deaths under age of 75 per 100,000 population age under 75)
-Ontario Mortality Data 2005- 2009, Ontario Ministry of Health and Long-Term Care
-Mental Health
-(Percentage of those age 20+ reporting very good or excellent mental health)
-2005-2011 Canadian Community Health Survey
-Preventable Hospitalizations
-(Age and sex adjusted number of ambulatory care sensitive condition hospitalizations per 100,000 population)
-2009-2011 Discharge Abstracts Database, Canadian Institute for Health Information
-Diabetes
-(Age and sex adjusted number of persons age 20+ with diabetes per 100 population)
-Ontario Diabetes Database, Ontario Registered Persons Database, Ontario Ministry of Health and Long-Term Care
+| <b>Data Layer</b> | <b>Data Source</b> |
+| --- | --- |
+| <b>Unemployment</b><br>(Number of unemployed persons age 15+) | 2011 National Household Survey |
+| <b>Low Income</b><br>(Percentage of persons living below the after-tax low income measure) | Statistics Canada |
+| <b>Social Assistance</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | Toronto Employment & Social Services |
+| <b>High School Graduation</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | 2006 Census |
+| <b>Marginalization Index</b><br>(A combined measure of 18 variables representing residential instability, ethnic concentration, dependency and material deprivation) | Ontario Marginalization Index |
+| <b>Marginalization Index</b><br>(A combined measure of 18 variables representing residential instability, ethnic concentration, dependency and material deprivation) | Ontario Marginalization Index |
+| <b>Post-Secondary Completion</b><br>(Percentage of persons age 25-65 with post secondary certificate, diploma, or degree) | 2011 National Household Survey |
+| <b>Municipal Voting Rate</b><br>(Percent of eligible voters who voted in the last municipal election) | Toronto Election & Registry Services, Toronto Open Data |
+| <b>Community Places for Meeting</b><br>(Average number of meeting places within a 10 minute walking distance measured from each residential block in the neighbourhoods [including libraries, recreation facilities, and places of worship]) | Toronto Open Data |
+| <b>Walkability</b><br>(A walkability score between 0 (not very walkable) and 100 (very walkable)) | Walkscore.com |
+| <b>Healthy Food Stores</b><br>(The average number of healthier food stores within a 10 minute walking distance from each residential block in a neighbourhood) | Toronto Open Data, Toronto Dinesafe |
+| <b>Greenspace</b><br>(Average amount of green space (including parks and public areas) per km2 in a 1 km circular buffer from each residential block in the neighbourhood) | DMTI (University of Toronto) |
+| <b>Premature Mortality</b><br>(Age-adjusted number of deaths under age of 75 per 100,000 population age under 75) | Ontario Mortality Data 2005- 2009, Ontario Ministry of Health and Long-Term Care |
+| <b>Mental Health</b><br>(Percentage of those age 20+ reporting very good or excellent mental health) | 2005-2011 Canadian Community Health Survey |
+| <b>Preventative Hospitalizations</b><br>(Age and sex adjusted number of ambulatory care sensitive condition hospitalizations per 100,000 population) | 2009-2011 Discharge Abstracts Database, Canadian Institute for Health Information |
+| <b>Diabetes</b><br>(Age and sex adjusted number of persons age 20+ with diabetes per 100 population) | Ontario Diabetes Database, Ontario Registered Persons Database, Ontario Ministry of Health and Long-Term Care |
 
-
-Note: The Food Banks layer was created by Team McRaster.
+<br><i>Note: The Food Banks layer was created by Team McRaster.</br></i>
 
 <b>Reference</b>
 
