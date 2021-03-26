@@ -75,11 +75,11 @@ Because the Neighbourhood Equity Index is meant to identify differences between 
 
 The composite weight for each indicator was calculated using the following formula, which was done in Microsoft Excel by Team McRaster:   
 
-Indicator Weight =  (Factor Score1  Eigenvalue1) + (Factor Score2  Eigenvalue2) + (Factor Score3  Eigenvalue3)   
+Indicator Weight =  (Factor Score1 * Eigenvalue1) + (Factor Score2 * Eigenvalue2) + (Factor Score3 * Eigenvalue3)   
 
 #### Sample calculation of the Indicator Weight for Diabetes:   
 
-Indicator Weight =  (0.826  5.378) + (0.323  3.147) + (0.218  2.559)   
+Indicator Weight =  (0.826 * 5.378) + (0.323 * 3.147) + (0.218 * 2.559)   
 				= 6.017   
 
 
@@ -99,22 +99,22 @@ Standardized Indicator Weight = 6.017 / 51.213
 
 Weighted Neighbourhood Equity index was first calculated so that the resulting scores ranged from 0 to 1, where 1 is inequitable and 0 is equitable:  
 
-Weighted Score = Sum of  (Standardized Indicator Value(i)  Standardized Indicator Weight(i))
+Weighted Score = Sum of  (Standardized Indicator Value(i) * Standardized Indicator Weight(i))
 Where i is one of the 15 indicators   
 
 #### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
-Weighted Score = 0.040404  0.117   
+Weighted Score = 0.040404 * 0.117   
 = 0.169223   
 
 
 Finally, the scores were reversed and multiplied by 100 so that the final Neighbourhood equity Index would range from 0 to 100, with 0 being least equitable (worst outcomes) and 100 being most equitable (best outcomes):   
 
-Neighbourhood Equity Index = (1- Weighted Score) 100   
+Neighbourhood Equity Index = (1- Weighted Score) * 100   
 
 #### Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
-Neighbourhood Equity Index = (1- 0.169223) 100
+Neighbourhood Equity Index = (1- 0.169223) * 100
 = 83.08   
 
 
