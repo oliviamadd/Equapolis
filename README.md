@@ -29,6 +29,7 @@ _Locate Nearby Food Banks_
 Enter your address or drop a pin to locate food banks near you and display their info Default search radius is 5 km, toggle the bar to increase or decrease it
 
 **Calculations**   
+
 Calculations for the Neighbourhood Equity Index (NEI) were done following the procedure outlined by the Social Policy Analysis and Research team for the City of Toronto (TSNS 2020 Methodological Documentation, 2014). All calculations were made using the Field Calculator in ArcGIS Pro. The NEI was calculated using 15 indicators that were weighted and combined to form the index. The 15 factors are outlined in Table 2 in the “Geospatial Open Data Sources” section. Because the 15 NEI indicators were presented in different units, they had to be standardized so that they all ranged from 0-1, where 1 is inequitable and 0 is equitable. For indicators where higher values indicate high inequity (such as Unemployment), the following formula was used for standardization: 
 
 Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) - Min(Indicator Value)    
@@ -39,12 +40,11 @@ Sample Calculation with Unemployment: Standardized Value = Indicator Value - Min
 
 Table 1. Data for Visible Minorities Layer. 
 | <b>Data Layer</b> | <b>Data Source</b> |
-| --- | --- |
 | % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
 | Population of each neighbourhood | 2016 Neighbourhood Profiles (Toronto Open Data) |
+
 Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro.
 | <b>Data Layer</b> | <b>Data Source</b> |
-| --- | --- |
 | <b>Unemployment</b><br>(Number of unemployed persons age 15+) | 2011 National Household Survey |
 | <b>Low Income</b><br>(Percentage of persons living below the after-tax low income measure) | Statistics Canada |
 | <b>Social Assistance</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | Toronto Employment & Social Services |
@@ -77,6 +77,7 @@ Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was c
  \[9\]https://globalnews.ca/news/7015522/black-neighbourhoods-toronto-coronavirus-racism/   
  \[10\] https://torontofoundation.ca/wp-content/uploads/2019/10/VitalSigns2019.pdf. 
  \[11\] https://www.canadapopulation.net/toronto-population/   
+ 
  Video and Audio references:   
  Stock footage credits: https://www.pexels.com/videos/ https://www.videvo.net/ Background music credits: https://www.bensound.com   
  Image credits to: https://unsplash.com/photos/VviFtDJakYk (Matthew Henry) https://unsplash.com/photos/-Y9XT1-5LL8 (Justin Lawrence)  
