@@ -40,11 +40,13 @@ Sample Calculation with Unemployment: Standardized Value = Indicator Value - Min
 
 Table 1. Data for Visible Minorities Layer. 
 | <b>Data Layer</b> | <b>Data Source</b> |
+| --- | --- |
 | % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
 | Population of each neighbourhood | 2016 Neighbourhood Profiles (Toronto Open Data) |
 
 Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro.
 | <b>Data Layer</b> | <b>Data Source</b> |
+| --- | --- |
 | <b>Unemployment</b><br>(Number of unemployed persons age 15+) | 2011 National Household Survey |
 | <b>Low Income</b><br>(Percentage of persons living below the after-tax low income measure) | Statistics Canada |
 | <b>Social Assistance</b><br>(Percentage of persons who are recipients of Ontario Works, persons on ODSP participating in OW employment programs and non-OW persons receiving assistance with medical items) | Toronto Employment & Social Services |
