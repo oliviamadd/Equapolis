@@ -47,7 +47,7 @@ Because the 15 NEI indicators were presented in different units, they had to be 
 Standardized Value = [Indicator Value - Min(Indicator Value)] / [Max(Indicator Value) - Min(Indicator Value)]    
 
 
-Sample Calculation with Low Income (Bridle Path-Sunnybrook-York Mills Neighbourhood):
+#### Sample Calculation with Low Income (Bridle Path-Sunnybrook-York Mills Neighbourhood):
 Standardized Value= [8.019441 - 5.579399] / [49.847095 - 5.579399]
 = 0.05512    
 
@@ -56,7 +56,7 @@ For Indicators where the low values signify inequity (such as Postsecondary Comp
 
 Standardized Valuereverse= (Max[Indicator Value] - Indicator Value] / (Max[Indicator Value] - Min[Indicator Value])    
 
-Sample Calculation with Postsecondary Completion (Bridle Path-Sunnybrook-York Mills Neighbourhood):    
+#### Sample Calculation with Postsecondary Completion (Bridle Path-Sunnybrook-York Mills Neighbourhood):    
 Standardized Value= (89.1 - 37.5) / (91.7 - 37.5)
 = 0.04797     
 
@@ -66,7 +66,7 @@ Each indicator was assigned a weight reflective of its proportion to its contrib
 
 The final weights were assigned by the Social Policy Analysis and Research for the City of Toronto after consulting with community agencies, leaders, City divisions and other partners [12].   
 
-Table 1. Standardized indicator PCA results (rotated factors) [12]    
+###### Table 1. Standardized indicator PCA results (rotated factors) [12]    
 ![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t1.png?raw=true)
 
 Factor 1 refers to neighbourhoods with high socioeconomic challenges, such as high unemployment and lower incomes. Factor 2 describes neighbourhoods with physical infrastructure challenges, such as low walkability and a low number of healthy food stores. Factor 3 refers to neighbourhoods with acute vulnerabilities, such as higher premature mortality and unnecessary hospitalizations. These factors correspond to the research done by Urban HEARTS@Toronto as common challenges faced by Toronto neighbourhoods, making these factors appropriate for calculating inequity.    
@@ -77,7 +77,7 @@ The composite weight for each indicator was calculated using the following formu
 
 Indicator Weight =  (Factor Score1  Eigenvalue1) + (Factor Score2  Eigenvalue2) + (Factor Score3  Eigenvalue3)   
 
-###### Sample calculation of the Indicator Weight for Diabetes:   
+#### Sample calculation of the Indicator Weight for Diabetes:   
 
 Indicator Weight =  (0.826  5.378) + (0.323  3.147) + (0.218  2.559)   
 				= 6.017   
@@ -88,11 +88,11 @@ Once the indicator weights were calculated, they were standardized so the sum of
 Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
 
 
-###### Sample calculation of the Standardized Indicator Weight for Diabetes:   
+#### Sample calculation of the Standardized Indicator Weight for Diabetes:   
 Standardized Indicator Weight = 6.017 / 51.213   
 = 0.117   
 
-Table 2. Final weights (in %) of all 15 indicators   
+######Table 2. Final weights (in %) of all 15 indicators   
 ![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t2.png?raw=true)
 
 ##### _Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
@@ -102,7 +102,7 @@ Weighted Neighbourhood Equity index was first calculated so that the resulting s
 Weighted Score = Sum of  (Standardized Indicator Valuei  Standardized Indicator Weighti)
 Where i is one of the 15 indicators   
 
-###### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+#### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
 Weighted Score = 0.040404  0.117   
 = 0.169223   
@@ -112,7 +112,7 @@ Finally, the scores were reversed and multiplied by 100 so that the final Neighb
 
 Neighbourhood Equity Index = (1- Weighted Score) 100   
 
-###### Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+#### Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
 Neighbourhood Equity Index = (1- 0.169223) 100
 = 83.08   
@@ -121,10 +121,6 @@ Neighbourhood Equity Index = (1- 0.169223) 100
 Note: The equations were provided by the Social Policy Analysis and Research for the City of Toronto, but all calculations were re-done by Team McRaster in Microsoft Excel and the ArcGIS Pro Field Calculator to display the data spatially. The intention of Team McRaster is to display this data in an interactive and transparent manner, to reach the citizens of Toronto and key decision makers.    
 
 ## Geospatial Open Data Sources   
-
-Table 3. Data for Visible Minorities Layer   
-
-**Geospatial Open Data Sources**   
 
 Table 3. Data for Visible Minorities Layer 
 | <b>Data Layer</b> | <b>Data Source</b> |
