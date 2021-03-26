@@ -1,4 +1,4 @@
-Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto
+<b>Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto</b>
 
 Team: Angelina Abi Daoud, Olivia Maddigan, and Madinakhon Sulaymonova 
 
@@ -51,14 +51,12 @@ Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) 
 
 Table 1. Data for Visible Minorities Layer
 
-Data Layer
-Data Source
-% Visible Minorities
-2016 Neighbourhood Profiles (Toronto Open Data)
-Population of each neighbourhood
-2016 Neighbourhood Profiles (Toronto Open Data)
+Table 1. Data for Visible Minorities Layer
 
-
+| <b>Data Layer</b> | <b>Data Source</b> |
+| --- | --- |
+| % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
+| Population of each neighbourhood | 2016 Neighbourhood Profiles (Toronto Open Data) |
 
 Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro.
 
