@@ -18,17 +18,17 @@ The purpose is to support community resilience in overcoming disparity among the
 
 This app helps users identify communities in Toronto that are facing inequity compared to their neighbours. Using the Neighbourhood Inequity Index, you are able to examine neighbourhoods facing unequal circumstances, and view all the factors that lead to this inequality.
 
-<i>Search by Neighbourhood</i>
+<i>Search by Neighbourhood</i><br>
 Choose a neighbourhood from the drop-down menu to zoom in and display their characteristics
 
-<i>Compare Neighbourhoods</i>
+<i>Compare Neighbourhoods</i><br>
 Display a column chart to compare inequity factors for every neighbourhood
 
-<i>Compare Layers</i>
+<i>Compare Layers</i><br>
 Swipe the center bar to compare the concentration of Visible Minorities with the Neighbourhood Inequity Index
 Note: Both layers must be turned on in Layers to compare them 
 
-<i>Locate Nearby Food Banks</i>
+<i>Locate Nearby Food Banks</i><br>
 Enter your address or drop a pin to locate food banks near you and display their info
 Default search radius is 5 km, toggle the bar to increase or decrease it
 
@@ -77,7 +77,7 @@ Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was c
 | <b>Preventative Hospitalizations</b><br>(Age and sex adjusted number of ambulatory care sensitive condition hospitalizations per 100,000 population) | 2009-2011 Discharge Abstracts Database, Canadian Institute for Health Information |
 | <b>Diabetes</b><br>(Age and sex adjusted number of persons age 20+ with diabetes per 100 population) | Ontario Diabetes Database, Ontario Registered Persons Database, Ontario Ministry of Health and Long-Term Care |
 
-<br><i>Note: The Food Banks layer was created by Team McRaster.</br></i>
+<i>Note: The Food Banks layer was created by Team McRaster.</i>
 
 <b>Reference</b>
 
