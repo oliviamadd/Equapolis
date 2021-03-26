@@ -1,12 +1,6 @@
 Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto
 
-Team
-
-Angelina Abi Daoud
-
-Olivia Maddigan 
-
-Madinakhon Sulaymonova 
+Team: Angelina Abi Daoud, Olivia Maddigan, and Madinakhon Sulaymonova 
 
 <b>Mission Statement</b>
 
@@ -20,25 +14,25 @@ Our app aims to expose disparities between neighbourhoods in Toronto by creating
 
 The purpose is to support community resilience in overcoming disparity among the overall population. We are aiming to reduce inequality by first exposing primarily racially-based inequality in Toronto[4]. We have created an app where users can see neighbourhood-based data pertaining to the quality of life of residents, and compare it to other datasets such as the concentration of visible minorities. Moreover, useful and critical information on food bank locations can be found in the app. Users can effectively use the app to identify disparity between neighbourhoods, in order to fully understand racial inequality and move towards addressing these issues in the community. We hope for a city in the near future where everyone is equal - an Equapolis. 
 
-App description and Features
+<b>App description and Features</b>
 
 This app helps users identify communities in Toronto that are facing inequity compared to their neighbours. Using the Neighbourhood Inequity Index, you are able to examine neighbourhoods facing unequal circumstances, and view all the factors that lead to this inequality.
 
-Search by Neighbourhood 
+<u>Search by Neighbourhood</u>
 Choose a neighbourhood from the drop-down menu to zoom in and display their characteristics
 
-Compare Neighbourhoods  
+<u>Compare Neighbourhoods</u>
 Display a column chart to compare inequity factors for every neighbourhood
 
-Compare Layers 
+<u>Compare Layers</u>
 Swipe the center bar to compare the concentration of Visible Minorities with the Neighbourhood Inequity Index
 Note: Both layers must be turned on in Layers to compare them 
 
-Locate Nearby Food Banks  
+<u>Locate Nearby Food Banks</u>
 Enter your address or drop a pin to locate food banks near you and display their info
 Default search radius is 5 km, toggle the bar to increase or decrease it
 
-Calculations 
+<b>Calculations</b>
 
 Calculations for the Neighbourhood Equity Index (NEI) were done following the procedure outlined by the Social Policy Analysis and Research team for the City of Toronto (TSNS 2020 Methodological Documentation, 2014). All calculations were made using the Field Calculator in ArcGIS Pro.
 
@@ -53,7 +47,7 @@ Sample Calculation with Unemployment:
 Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) - Min(Indicator Value)
 
 
-Geospatial Open Data Sources
+<b>Geospatial Open Data Sources</b>
 
 Table 1. Data for Visible Minorities Layer
 
@@ -116,7 +110,7 @@ Ontario Diabetes Database, Ontario Registered Persons Database, Ontario Ministry
 
 Note: The Food Banks layer was created by Team McRaster.
 
-Reference
+<b>Reference</b>
 
 [1] https://nationalequityatlas.org/research/index-findings 
 [2]https://www.thestar.com/news/gta/2018/09/30/toronto-is-segregated-by-race-and-income-and-the-numbers-are-ugly.html 
