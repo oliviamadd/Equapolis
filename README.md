@@ -126,13 +126,13 @@ Table 3. Data for Visible Minorities Layer
 
 **Geospatial Open Data Sources**   
 
-Table 1. Data for Visible Minorities Layer. 
+Table 3. Data for Visible Minorities Layer 
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
 | % Visible Minorities | 2016 Neighbourhood Profiles (Toronto Open Data) |
 | Population of each neighbourhood | 2016 Neighbourhood Profiles (Toronto Open Data) |
 
-Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro.
+Table 4. Data used to calculate the Neighbourhood Equity Index (NEI). Data was compiled by Urban HEART@Toronto and the NEI was calculated by Team McRaster using ArcGIS Pro and Microsoft Excel.
 | <b>Data Layer</b> | <b>Data Source</b> |
 | --- | --- |
 | <b>Unemployment</b><br>(Number of unemployed persons age 15+) | 2011 National Household Survey |
@@ -167,6 +167,7 @@ Table 2. Data used to calculate the Neighbourhood Equity Index (NEI). Data was c
  \[9\]https://globalnews.ca/news/7015522/black-neighbourhoods-toronto-coronavirus-racism/   
  \[10\] https://torontofoundation.ca/wp-content/uploads/2019/10/VitalSigns2019.pdf. 
  \[11\] https://www.canadapopulation.net/toronto-population/   
+ \[12\] https://www.toronto.ca/wp-content/uploads/2017/11/97eb-TSNS-2020-NEI-equity-index-methodology-research-report-backgroundfile-67350.pdf
  
  Video and Audio references:   
  Stock footage credits: https://www.pexels.com/videos/ https://www.videvo.net/ Background music credits: https://www.bensound.com   
