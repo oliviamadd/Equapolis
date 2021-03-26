@@ -92,7 +92,7 @@ Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights
 Standardized Indicator Weight = 6.017 / 51.213   
 = 0.117   
 
-######Table 2. Final weights (in %) of all 15 indicators   
+###### Table 2. Final weights (in %) of all 15 indicators   
 ![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t2.png?raw=true)
 
 ##### _Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
