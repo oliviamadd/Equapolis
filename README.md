@@ -99,7 +99,7 @@ Standardized Indicator Weight = 6.017 / 51.213
 
 Weighted Neighbourhood Equity index was first calculated so that the resulting scores ranged from 0 to 1, where 1 is inequitable and 0 is equitable:  
 
-Weighted Score = Sum of  (Standardized Indicator Valuei  Standardized Indicator Weighti)
+Weighted Score = Sum of  (Standardized Indicator Value(i)  Standardized Indicator Weight(i))
 Where i is one of the 15 indicators   
 
 #### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
