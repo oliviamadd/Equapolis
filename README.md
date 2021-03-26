@@ -67,7 +67,7 @@ Each indicator was assigned a weight reflective of its proportion to its contrib
 The final weights were assigned by the Social Policy Analysis and Research for the City of Toronto after consulting with community agencies, leaders, City divisions and other partners [12].   
 
 Table 1. Standardized indicator PCA results (rotated factors) [12]    
-![alt text](https://github.com/oliviamadd/Equapolis/img/t1.png?raw=true)
+![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t1.png?raw=true)
 
 Factor 1 refers to neighbourhoods with high socioeconomic challenges, such as high unemployment and lower incomes. Factor 2 describes neighbourhoods with physical infrastructure challenges, such as low walkability and a low number of healthy food stores. Factor 3 refers to neighbourhoods with acute vulnerabilities, such as higher premature mortality and unnecessary hospitalizations. These factors correspond to the research done by Urban HEARTS@Toronto as common challenges faced by Toronto neighbourhoods, making these factors appropriate for calculating inequity.    
 
@@ -93,6 +93,7 @@ Standardized Indicator Weight = 6.017 / 51.213
 = 0.117   
 
 Table 2. Final weights (in %) of all 15 indicators   
+![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t2.png?raw=true)
 
 _Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
 
