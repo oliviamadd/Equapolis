@@ -1,8 +1,11 @@
 Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto
 
 Team
+
 Angelina Abi Daoud
+
 Olivia Maddigan 
+
 Madinakhon Sulaymonova 
 
 <b>Mission Statement</b>
