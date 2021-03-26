@@ -1,8 +1,8 @@
-**Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto** 
+# **Equapolis: A Tracker for Exposure and Awareness of Inequity in Toronto** 
 
 Team: Angelina Abi Daoud, Olivia Maddigan, and Madinakhon Sulaymonova  
 
-**Mission Statement**  
+## **Mission Statement**  
 
 Toronto is Canada's largest city and serves as the capital of Ontario. This Canadian metropolis contains a population of over 2.9 million throughout its 140 neighbourhoods covering an area of 630.2 km2. Toronto represents Canada as a diverse world leader that roots for culture and ethnicity\[11\], however; the city has failed to take accountability regarding issues of neighbourhood equality. The city of Toronto specifically has come under fire for having high levels of disparity in quality of life between primarily white neighbourhoods and neighbourhoods where primarily visible minorities reside\[2\]. The 2019 Vital Signs of Toronto report confirmed that Toronto neighbourhoods are racially segregated, with the highest concentration of visible minorities living in the lowest-income neighbourhoods\[10\]. The reason for these disparities is a positive feedback loop of systemic racism. A single act of discrimination - whether it be someone failing to attain a job, a loan, or housing - can have a significant ripple effect, which affects the socioeconomic status of visible minorities to a great extent. This issue needs to be exposed and addressed, which is what Equapolis aims to do.   
 
@@ -11,36 +11,36 @@ It is 2021 and now more than ever, the federal, provincial, and municipal govern
 Our app aims to expose disparities between neighbourhoods in Toronto by creating a Neighbourhood Inequity Index (NEI) so that residents can see exactly what is happening in their own backyard. It aids in providing a broad quantitative assessment of wellbeing across the 140 neighbourhoods in Toronto \[3\]. It is a toolset to support the advancements of equity solutions. Our team believes that the term equity means ensuring both the wellbeing of individuals and communities, as well as moving towards closing racial gaps. By displaying the NEI on our application, we provide a snapshot into the state of each community and wellbeing of residents\[1\]. This must not be mistaken as an indicator of service inputs or population groups, rather the index is based on overall neighbourhood outcomes\[3\]. 
 The purpose is to support community resilience in overcoming disparity among the overall population. We are aiming to reduce inequality by first exposing primarily racially-based inequality in Toronto\[4\]. We have created an app where users can see neighbourhood-based data pertaining to the quality of life of residents, and compare it to other datasets such as the concentration of visible minorities. Moreover, useful and critical information on food bank locations can be found in the app. Users can effectively use the app to identify disparity between neighbourhoods, in order to fully understand racial inequality and move towards addressing these issues in the community. Food insecurity, neighbourhood disparities, and racial inequity are intertwined and complicated issues. We hope for a city in the near future where everyone is equal - an Equapolis.   
 
-**App Description and Features**    
+## **App Description and Features**    
 
 This app helps users identify communities in Toronto that are facing inequity compared to their neighbours. Using the Neighbourhood Inequity Index, you are able to examine neighbourhoods facing unequal circumstances, and view all the factors that lead to this inequality.   
 
-_Search by Neighbourhood_   
+##### _Search by Neighbourhood_   
 This feature allows users to choose a neighbourhood from the drop-down menu to zoom in and display their equity indicators   
 
-_Compare Neighbourhoods_    
+##### _Compare Neighbourhoods_    
 This feature displays a column chart to compare inequity indicators between neighbourhoods   
 User can specify a spatial extent by drawing on the map to compare user-defined neighbourhoods    
 
-_Compare Layers_    
+##### _Compare Layers_    
 Note: The "Neighbourhood Equity" and "% Visible Minorities" layers must be turned on in Layers for this feature    
 This feature allows the user to visually compare neighbourhood equity with concentration of visible minorities   
 Swipe the center bar to compare the layers, and view the legend for the layer symbology   
 Visible minority populations refer to; South Asian, Chinese, Black, Filipino, Arab, Southeast Asian, West Asian, Korean, and Japanese   
 
-_Locate Nearby Food Banks_   
+##### _Locate Nearby Food Banks_   
 Living in a low equity neighbourhood is an indicator for food insecurity, which affects 1 in 5 Toronto households. However, food banks are underused because of lack of knowledge of their existence.   
 This feature allows the user to enter their address or drop a pin to locate food banks near them and display their contact information   
 Default search radius is 5 km, user can scroll the bar to increase or decrease it
 Users can also click the "Directions" button to access full directions from their location to any food bank   
 
-**Calculations**   
+## **Calculations**   
 
 Calculations for the Neighbourhood Equity Index (NEI) were done following the procedure outlined by the Social Policy Analysis and Research team for the City of Toronto[12]. All calculations were made using Microsoft Excel and the Field Calculator in ArcGIS Pro.   
 
 The NEI was calculated using 15 indicators that were weighted and combined to form the index. The 15 factors are outlined in detail in Table 3 of the “Geospatial Open Data Sources” section.    
 
-_Part 1 - Indicator Standardization_   
+##### _Part 1 - Indicator Standardization_   
 
 Because the 15 NEI indicators were presented in different units, they had to be standardized so that they all ranged from 0-1, where 1 is inequitable and 0 is equitable. For indicators where higher values indicate high inequity (such as Low Income), the following formula was used for standardization:    
 
@@ -60,7 +60,7 @@ Sample Calculation with Postsecondary Completion (Bridle Path-Sunnybrook-York Mi
 Standardized Value= (89.1 - 37.5) / (91.7 - 37.5)
 = 0.04797     
 
-Part 2 - Assigning weights and weight standardization   
+##### Part 2 - Assigning weights and weight standardization   
 
 Each indicator was assigned a weight reflective of its proportion to its contribution in describing the inequity between neighbourhoods. Weights were derived by the Social Policy Analysis and Research for the City of Toronto using a principal components analysis with varimax [12].   
 
@@ -77,7 +77,7 @@ The composite weight for each indicator was calculated using the following formu
 
 Indicator Weight =  (Factor Score1  Eigenvalue1) + (Factor Score2  Eigenvalue2) + (Factor Score3  Eigenvalue3)   
 
-Sample calculation of the Indicator Weight for Diabetes:   
+###### Sample calculation of the Indicator Weight for Diabetes:   
 
 Indicator Weight =  (0.826  5.378) + (0.323  3.147) + (0.218  2.559)   
 				= 6.017   
@@ -88,21 +88,21 @@ Once the indicator weights were calculated, they were standardized so the sum of
 Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
 
 
-Sample calculation of the Standardized Indicator Weight for Diabetes:   
+###### Sample calculation of the Standardized Indicator Weight for Diabetes:   
 Standardized Indicator Weight = 6.017 / 51.213   
 = 0.117   
 
 Table 2. Final weights (in %) of all 15 indicators   
 ![alt text](https://github.com/oliviamadd/Equapolis/blob/main/img/t2.png?raw=true)
 
-_Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
+##### _Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
 
 Weighted Neighbourhood Equity index was first calculated so that the resulting scores ranged from 0 to 1, where 1 is inequitable and 0 is equitable:  
 
 Weighted Score = Sum of  (Standardized Indicator Valuei  Standardized Indicator Weighti)
 Where i is one of the 15 indicators   
 
-Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+###### Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
 Weighted Score = 0.040404  0.117   
 = 0.169223   
@@ -112,7 +112,7 @@ Finally, the scores were reversed and multiplied by 100 so that the final Neighb
 
 Neighbourhood Equity Index = (1- Weighted Score) 100   
 
-Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+###### Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
 
 Neighbourhood Equity Index = (1- 0.169223) 100
 = 83.08   
@@ -120,7 +120,7 @@ Neighbourhood Equity Index = (1- 0.169223) 100
 
 Note: The equations were provided by the Social Policy Analysis and Research for the City of Toronto, but all calculations were re-done by Team McRaster in Microsoft Excel and the ArcGIS Pro Field Calculator to display the data spatially. The intention of Team McRaster is to display this data in an interactive and transparent manner, to reach the citizens of Toronto and key decision makers.    
 
-Geospatial Open Data Sources   
+## Geospatial Open Data Sources   
 
 Table 3. Data for Visible Minorities Layer   
 
@@ -154,7 +154,7 @@ Table 4. Data used to calculate the Neighbourhood Equity Index (NEI). Data was c
 
  _Note: The Food Banks layer was created by Team McRaster._    
  
- **Reference**   
+## **Reference**   
  
  \[1\] https://nationalequityatlas.org/research/index-findings   
  \[2\]https://www.thestar.com/news/gta/2018/09/30/toronto-is-segregated-by-race-and-income-and-the-numbers-are-ugly.html   
