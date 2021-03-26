@@ -15,26 +15,112 @@ The purpose is to support community resilience in overcoming disparity among the
 
 This app helps users identify communities in Toronto that are facing inequity compared to their neighbours. Using the Neighbourhood Inequity Index, you are able to examine neighbourhoods facing unequal circumstances, and view all the factors that lead to this inequality.   
 
-_Search by Neighbourhood_    
-Choose a neighbourhood from the drop-down menu to zoom in and display their characteristics   
+_Search by Neighbourhood_   
+This feature allows users to choose a neighbourhood from the drop-down menu to zoom in and display their equity indicators   
 
 _Compare Neighbourhoods_    
-Display a column chart to compare inequity factors for every neighbourhood 
+This feature displays a column chart to compare inequity indicators between neighbourhoods   
+User can specify a spatial extent by drawing on the map to compare user-defined neighbourhoods    
 
 _Compare Layers_    
-Swipe the center bar to compare the concentration of Visible Minorities with the Neighbourhood Inequity Index   
-Note: Both layers must be turned on in Layers to compare them   
+Note: The "Neighbourhood Equity" and "% Visible Minorities" layers must be turned on in Layers for this feature    
+This feature allows the user to visually compare neighbourhood equity with concentration of visible minorities   
+Swipe the center bar to compare the layers, and view the legend for the layer symbology   
+Visible minority populations refer to; South Asian, Chinese, Black, Filipino, Arab, Southeast Asian, West Asian, Korean, and Japanese   
 
-_Locate Nearby Food Banks_    
-Enter your address or drop a pin to locate food banks near you and display their info Default search radius is 5 km, toggle the bar to increase or decrease it
+_Locate Nearby Food Banks_   
+Living in a low equity neighbourhood is an indicator for food insecurity, which affects 1 in 5 Toronto households. However, food banks are underused because of lack of knowledge of their existence.   
+This feature allows the user to enter their address or drop a pin to locate food banks near them and display their contact information   
+Default search radius is 5 km, user can scroll the bar to increase or decrease it
+Users can also click the "Directions" button to access full directions from their location to any food bank   
 
 **Calculations**   
 
-Calculations for the Neighbourhood Equity Index (NEI) were done following the procedure outlined by the Social Policy Analysis and Research team for the City of Toronto (TSNS 2020 Methodological Documentation, 2014). All calculations were made using the Field Calculator in ArcGIS Pro. The NEI was calculated using 15 indicators that were weighted and combined to form the index. The 15 factors are outlined in Table 2 in the “Geospatial Open Data Sources” section. Because the 15 NEI indicators were presented in different units, they had to be standardized so that they all ranged from 0-1, where 1 is inequitable and 0 is equitable. For indicators where higher values indicate high inequity (such as Unemployment), the following formula was used for standardization: 
+Calculations for the Neighbourhood Equity Index (NEI) were done following the procedure outlined by the Social Policy Analysis and Research team for the City of Toronto[12]. All calculations were made using Microsoft Excel and the Field Calculator in ArcGIS Pro.   
 
-Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) - Min(Indicator Value)    
+The NEI was calculated using 15 indicators that were weighted and combined to form the index. The 15 factors are outlined in detail in Table 3 of the “Geospatial Open Data Sources” section.    
 
-Sample Calculation with Unemployment: Standardized Value = Indicator Value - Min(Indicator Value)Max(Indicator Value) - Min(Indicator Value)  
+_Part 1 - Indicator Standardization_   
+
+Because the 15 NEI indicators were presented in different units, they had to be standardized so that they all ranged from 0-1, where 1 is inequitable and 0 is equitable. For indicators where higher values indicate high inequity (such as Low Income), the following formula was used for standardization:    
+
+Standardized Value = [Indicator Value - Min(Indicator Value)] / [Max(Indicator Value) - Min(Indicator Value)]    
+
+
+Sample Calculation with Low Income (Bridle Path-Sunnybrook-York Mills Neighbourhood):
+Standardized Value= [8.019441 - 5.579399] / [49.847095 - 5.579399]
+= 0.05512    
+
+
+For Indicators where the low values signify inequity (such as Postsecondary Completion), the following formula is used to standardize to reverse the direction of the underlying indicator:   
+
+Standardized Valuereverse= (Max[Indicator Value] - Indicator Value] / (Max[Indicator Value] - Min[Indicator Value])    
+
+Sample Calculation with Postsecondary Completion (Bridle Path-Sunnybrook-York Mills Neighbourhood):    
+Standardized Value= (89.1 - 37.5) / (91.7 - 37.5)
+= 0.04797     
+
+Part 2 - Assigning weights and weight standardization   
+
+Each indicator was assigned a weight reflective of its proportion to its contribution in describing the inequity between neighbourhoods. Weights were derived by the Social Policy Analysis and Research for the City of Toronto using a principal components analysis with varimax [12].   
+
+The final weights were assigned by the Social Policy Analysis and Research for the City of Toronto after consulting with community agencies, leaders, City divisions and other partners [12].   
+
+Table 1. Standardized indicator PCA results (rotated factors) [12]    
+
+Factor 1 refers to neighbourhoods with high socioeconomic challenges, such as high unemployment and lower incomes. Factor 2 describes neighbourhoods with physical infrastructure challenges, such as low walkability and a low number of healthy food stores. Factor 3 refers to neighbourhoods with acute vulnerabilities, such as higher premature mortality and unnecessary hospitalizations. These factors correspond to the research done by Urban HEARTS@Toronto as common challenges faced by Toronto neighbourhoods, making these factors appropriate for calculating inequity.    
+
+Because the Neighbourhood Equity Index is meant to identify differences between neighbourhoods, the factors explaining the most variance were weighted more heavily. Weights for the 15 indicators (listed in Table 1 above) were derived by the Social Policy Analysis and Research for the City of Toronto based on the Eigenvalues and community consultations [12].   
+
+The composite weight for each indicator was calculated using the following formula, which was done in Microsoft Excel by Team McRaster:   
+
+Indicator Weight =  (Factor Score1  Eigenvalue1) + (Factor Score2  Eigenvalue2) + (Factor Score3  Eigenvalue3)   
+
+Sample calculation of the Indicator Weight for Diabetes:   
+
+Indicator Weight =  (0.826  5.378) + (0.323  3.147) + (0.218  2.559)   
+				= 6.017   
+
+
+Once the indicator weights were calculated, they were standardized so the sum of all weightings equal 1, using this formula:     
+
+Standardized Indicator Weight = Indicator Weight / Sum of all Indicator Weights    
+
+
+Sample calculation of the Standardized Indicator Weight for Diabetes:   
+Standardized Indicator Weight = 6.017 / 51.213   
+= 0.117   
+
+Table 2. Final weights (in %) of all 15 indicators   
+
+_Part 3 - Calculating the Neighbourhood Equity Index (NEI)_  
+
+Weighted Neighbourhood Equity index was first calculated so that the resulting scores ranged from 0 to 1, where 1 is inequitable and 0 is equitable:  
+
+Weighted Score = Sum of  (Standardized Indicator Valuei  Standardized Indicator Weighti)
+Where i is one of the 15 indicators   
+
+Sample calculation of the Weighted Score for Diabetes (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+
+Weighted Score = 0.040404  0.117   
+= 0.169223   
+
+
+Finally, the scores were reversed and multiplied by 100 so that the final Neighbourhood equity Index would range from 0 to 100, with 0 being least equitable (worst outcomes) and 100 being most equitable (best outcomes):   
+
+Neighbourhood Equity Index = (1- Weighted Score) 100   
+
+Sample calculation of the Neighbourhood Equity Index (Bridle Path-Sunnybrook-York Mills Neighbourhood):   
+
+Neighbourhood Equity Index = (1- 0.169223) 100
+= 83.08   
+
+
+Note: The equations were provided by the Social Policy Analysis and Research for the City of Toronto, but all calculations were re-done by Team McRaster in Microsoft Excel and the ArcGIS Pro Field Calculator to display the data spatially. The intention of Team McRaster is to display this data in an interactive and transparent manner, to reach the citizens of Toronto and key decision makers.    
+
+Geospatial Open Data Sources   
+
+Table 3. Data for Visible Minorities Layer   
 
 **Geospatial Open Data Sources**   
 
