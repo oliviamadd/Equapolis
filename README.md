@@ -14,21 +14,21 @@ Our app aims to expose disparities between neighbourhoods in Toronto by creating
 
 The purpose is to support community resilience in overcoming disparity among the overall population. We are aiming to reduce inequality by first exposing primarily racially-based inequality in Toronto[4]. We have created an app where users can see neighbourhood-based data pertaining to the quality of life of residents, and compare it to other datasets such as the concentration of visible minorities. Moreover, useful and critical information on food bank locations can be found in the app. Users can effectively use the app to identify disparity between neighbourhoods, in order to fully understand racial inequality and move towards addressing these issues in the community. We hope for a city in the near future where everyone is equal - an Equapolis. 
 
-<b>App description and Features</b>
+<b>App Description and Features</b>
 
 This app helps users identify communities in Toronto that are facing inequity compared to their neighbours. Using the Neighbourhood Inequity Index, you are able to examine neighbourhoods facing unequal circumstances, and view all the factors that lead to this inequality.
 
-<u>Search by Neighbourhood</u>
+<i>Search by Neighbourhood</i>
 Choose a neighbourhood from the drop-down menu to zoom in and display their characteristics
 
-<u>Compare Neighbourhoods</u>
+<i>Compare Neighbourhoods</i>
 Display a column chart to compare inequity factors for every neighbourhood
 
-<u>Compare Layers</u>
+<i>Compare Layers</i>
 Swipe the center bar to compare the concentration of Visible Minorities with the Neighbourhood Inequity Index
 Note: Both layers must be turned on in Layers to compare them 
 
-<u>Locate Nearby Food Banks</u>
+<i>Locate Nearby Food Banks</i>
 Enter your address or drop a pin to locate food banks near you and display their info
 Default search radius is 5 km, toggle the bar to increase or decrease it
 
@@ -113,15 +113,25 @@ Note: The Food Banks layer was created by Team McRaster.
 <b>Reference</b>
 
 [1] https://nationalequityatlas.org/research/index-findings 
+
 [2]https://www.thestar.com/news/gta/2018/09/30/toronto-is-segregated-by-race-and-income-and-the-numbers-are-ugly.html 
+
 [3]https://www.toronto.ca/wp-content/uploads/2017/11/97eb-TSNS-2020-NEI-equity-index-methodology-research-report-backgroundfile-67350.pdf 
+
 [4] https://www.toronto.ca/legdocs/mmis/2014/cd/bgrd/backgroundfile-67382.pdf 
+
 [5]https://www-cambridge-org.libaccess.lib.mcmaster.ca/core/journals/public-health-nutrition/article/assessing-the-relevance-of-neighbourhood-characteristics-to-the-household-food-security-of-lowincome-toronto-families/7CCCA5930BA7171F2C893188671BEC3F 
+
 [6]https://datacommons.org/place/wikidataId/Q172?utm_medium=explore&mprop=count&popt=Person&hl=en 
+
 [7]https://www.toronto.com/news-story/10111865-this-is-a-fact-systemic-racism-makes-life-harder-for-many-ontarians/
+
 [8] https://globalnews.ca/news/7029694/canada-systemic-racism/
+
 [9]https://globalnews.ca/news/7015522/black-neighbourhoods-toronto-coronavirus-racism/
+
 [10] https://torontofoundation.ca/wp-content/uploads/2019/10/VitalSigns2019.pdf
+
 [11] https://www.canadapopulation.net/toronto-population/ 
 
 Video and Audio references:
